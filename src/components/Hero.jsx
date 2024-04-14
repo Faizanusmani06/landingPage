@@ -8,7 +8,7 @@ import { useRef } from "react";
 import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
-
+import {Link} from 'react-router-dom'
 const Hero = () => {
   const parallaxRef = useRef(null);
 
@@ -39,9 +39,11 @@ const Hero = () => {
             Unleash the power of AI. Chat with Ai Companion
             using StudyBuddy.Ai, Learn from greatest Personalities.
           </p>
-          <Button href="/pricing" white>
-            Get started
+          <Link to="http://localhost:3000">
+          <Button white>
+            Get Started
           </Button>
+          </Link>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
